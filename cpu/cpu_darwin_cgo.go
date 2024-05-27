@@ -12,6 +12,7 @@ package cpu
 #include <mach/host_info.h>
 #include <TargetConditionals.h>
 #if TARGET_OS_MAC
+#cgo CFLAGS: -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include
 #include <libproc.h>
 #endif
 #include <mach/processor_info.h>
